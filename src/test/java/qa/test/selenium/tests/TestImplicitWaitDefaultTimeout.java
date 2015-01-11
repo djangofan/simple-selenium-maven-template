@@ -82,6 +82,7 @@ public class TestImplicitWaitDefaultTimeout extends DriverFactory {
         } catch ( WebDriverException wde ) {
             // swallow error to defer to timer
         }
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //set back to default after test
 
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
