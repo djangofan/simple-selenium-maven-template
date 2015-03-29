@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class GoogleExampleWebDriver extends DriverFactory {
-
+public class GoogleExampleWebDriver extends DriverFactory
+{
     @Test
     public void googleCheeseExample() {
         // Create a new WebDriver instance
